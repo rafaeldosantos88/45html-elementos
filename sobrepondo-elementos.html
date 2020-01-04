@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sobrepondo Elementos</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		.conteudo1{
+			border:1px solid red;
+			background: #F1D6DD;
+			width: 200px;
+			height: 200px;
+			position: absolute; /* na possição absoluta um sobreponhe o outro*/
+			z-index:1;/* qual conteudo vai vir primeiro na frente*/
+		}
+		.conteudo2{
+			border:1px solid red;
+			background: #DF1D54;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 80px;
+			left: 80px;
+			z-index:0; 
+		}
+		.conteudo3{
+			border:1px solid red;
+			background:blue;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 160px;
+			left: 160px;
+			z-index:0; 
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="conteudo1">
+		Conteudo 1
+	</div>
+
+	<div class="conteudo2">
+		Conteudo 2
+		
+	</div>
+	<div class="conteudo3">
+		Conteudo 3
+		
+	</div>
+
+</body>
+</html>
